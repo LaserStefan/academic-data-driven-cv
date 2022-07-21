@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-21T12:08:45.594Z" agent="5.0 (Windows)" etag="hoYHYCGtnuAkgVUYmf69" version="20.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-21T14:23:03.731Z" agent="5.0 (Windows)" etag="EwxkS0PyAA-wdGmZQPZ_" version="20.1.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1673" dy="1016" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -29,7 +29,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="Take notes in &lt;b&gt;Joplin &lt;/b&gt;or&lt;b&gt; collaborative Pad&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="Take notes in &lt;b&gt;Joplin &lt;/b&gt;or&lt;b&gt; collaborative Pad&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="290" y="300" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ObWo0l2c98YZDXIt6_wW-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-10">
@@ -54,7 +54,7 @@
         <mxCell id="ObWo0l2c98YZDXIt6_wW-105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObWo0l2c98YZDXIt6_wW-0" target="ObWo0l2c98YZDXIt6_wW-104">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ObWo0l2c98YZDXIt6_wW-0" value="&lt;b&gt;Set up doc. in Joplin &lt;/b&gt;but edit in external editor &lt;b&gt;Zettlr&lt;br&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-0" value="&lt;b&gt;Set up doc. in Joplin &lt;/b&gt;but edit in external editor &lt;b&gt;Zettlr&lt;br&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="80" y="720" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ObWo0l2c98YZDXIt6_wW-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObWo0l2c98YZDXIt6_wW-3" target="ObWo0l2c98YZDXIt6_wW-5">
@@ -89,7 +89,7 @@
         <mxCell id="ObWo0l2c98YZDXIt6_wW-13" value="ASAP? Doable?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="525" y="290" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="ObWo0l2c98YZDXIt6_wW-15" value="Just do it now" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-15" value="Just do it now" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="680" y="110" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ObWo0l2c98YZDXIt6_wW-17" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -116,7 +116,7 @@
         <mxCell id="ObWo0l2c98YZDXIt6_wW-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObWo0l2c98YZDXIt6_wW-27" target="ObWo0l2c98YZDXIt6_wW-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ObWo0l2c98YZDXIt6_wW-27" value="&lt;b&gt;Check calender &lt;/b&gt;via&lt;b&gt; Reclaim, &lt;/b&gt;and &lt;b&gt;Kanban Board&lt;/b&gt; in &lt;b&gt;Joplin&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-27" value="&lt;b&gt;Check calender &lt;/b&gt;via&lt;b&gt; Reclaim, &lt;/b&gt;and &lt;b&gt;Kanban Board&lt;/b&gt; in &lt;b&gt;Joplin&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="290" y="110" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ObWo0l2c98YZDXIt6_wW-29" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -125,7 +125,10 @@
         <mxCell id="ObWo0l2c98YZDXIt6_wW-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObWo0l2c98YZDXIt6_wW-36" target="ObWo0l2c98YZDXIt6_wW-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ObWo0l2c98YZDXIt6_wW-36" value="Register&amp;nbsp; in &lt;b&gt;&lt;br&gt;Kanban Board&lt;/b&gt;, get &lt;b&gt;Reclaim.ai reminder.&lt;br&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-132" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObWo0l2c98YZDXIt6_wW-36" target="ObWo0l2c98YZDXIt6_wW-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-36" value="Register&amp;nbsp; in &lt;b&gt;&lt;br&gt;Kanban Board&lt;/b&gt;, get &lt;b&gt;Reclaim.ai reminder.&lt;br&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="505" y="530" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ObWo0l2c98YZDXIt6_wW-38" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -140,7 +143,7 @@
         <mxCell id="ObWo0l2c98YZDXIt6_wW-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObWo0l2c98YZDXIt6_wW-48" target="ObWo0l2c98YZDXIt6_wW-53">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ObWo0l2c98YZDXIt6_wW-48" value="&lt;b&gt;Print &lt;/b&gt;and take notes or use &lt;b&gt;ebook reader&lt;/b&gt; and sync notes. Document literature via Zotero" style="rounded=1;whiteSpace=wrap;html=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-48" value="&lt;b&gt;Read. Print &lt;/b&gt;and take notes or use &lt;b&gt;ebook reader&lt;/b&gt; and sync notes. Document literature via Zotero" style="rounded=1;whiteSpace=wrap;html=1;glass=0;strokeWidth=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="290" y="452.5" width="120" height="85" as="geometry" />
         </mxCell>
         <mxCell id="ObWo0l2c98YZDXIt6_wW-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObWo0l2c98YZDXIt6_wW-50" target="ObWo0l2c98YZDXIt6_wW-48">
@@ -228,6 +231,27 @@
         </mxCell>
         <mxCell id="ObWo0l2c98YZDXIt6_wW-130" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="400" y="25" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-134" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObWo0l2c98YZDXIt6_wW-131" target="ObWo0l2c98YZDXIt6_wW-133">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-137" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObWo0l2c98YZDXIt6_wW-131" target="ObWo0l2c98YZDXIt6_wW-136">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-131" value="Smth. to &lt;br&gt;learn by heart?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="525" y="615" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-133" value="Enter into &lt;b&gt;Anki &lt;/b&gt;and practice" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="505" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-135" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="685" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-136" value="Programming.&amp;nbsp; Use &lt;b&gt;Py &lt;/b&gt;and &lt;b&gt;R&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="640" y="625" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-138" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="590" y="625" width="40" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
