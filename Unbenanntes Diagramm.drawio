@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-21T12:04:56.307Z" agent="5.0 (Windows)" etag="vfnHpAlBaayoQmazjbzS" version="20.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-21T12:08:32.874Z" agent="5.0 (Windows)" etag="Wh6NT-PxgmR8skiH5kjM" version="20.1.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1673" dy="1016" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -131,7 +131,7 @@
         <mxCell id="ObWo0l2c98YZDXIt6_wW-38" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="505" y="425" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ObWo0l2c98YZDXIt6_wW-112" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;startArrow=classic;startFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObWo0l2c98YZDXIt6_wW-39" target="ObWo0l2c98YZDXIt6_wW-111">
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-127" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObWo0l2c98YZDXIt6_wW-39" target="ObWo0l2c98YZDXIt6_wW-126">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ObWo0l2c98YZDXIt6_wW-39" value="&lt;b&gt;Workflow:&lt;/b&gt; &lt;br&gt;how to do &lt;br&gt;the daily stuff" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -219,6 +219,12 @@
         </mxCell>
         <mxCell id="ObWo0l2c98YZDXIt6_wW-118" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="310" y="85" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ObWo0l2c98YZDXIt6_wW-126" target="ObWo0l2c98YZDXIt6_wW-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-126" value="Mail, Mattermost, Slack" style="whiteSpace=wrap;html=1;rounded=0;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="220" y="20" width="70" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
