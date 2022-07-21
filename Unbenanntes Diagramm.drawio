@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-21T12:08:32.874Z" agent="5.0 (Windows)" etag="Wh6NT-PxgmR8skiH5kjM" version="20.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-21T12:08:45.594Z" agent="5.0 (Windows)" etag="hoYHYCGtnuAkgVUYmf69" version="20.1.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1673" dy="1016" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -225,6 +225,9 @@
         </mxCell>
         <mxCell id="ObWo0l2c98YZDXIt6_wW-126" value="Mail, Mattermost, Slack" style="whiteSpace=wrap;html=1;rounded=0;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="220" y="20" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ObWo0l2c98YZDXIt6_wW-130" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="25" width="40" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
