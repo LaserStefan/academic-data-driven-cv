@@ -1,7 +1,7 @@
 on:
   push:
-    paths:
-      - cv.Rmd
+    branches:
+      - main
 
 name: Render my CV
 
