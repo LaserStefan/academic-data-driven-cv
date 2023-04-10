@@ -3,6 +3,9 @@ on:
     branches:
       - main
 
+env: 
+  GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
 name: Render my CV
 
 jobs:
