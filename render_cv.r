@@ -5,6 +5,8 @@
 # loaded and load the cached version in the .Rmd instead of re-fetching it twice
 # for the HTML and PDF rendering. This exercise is left to the reader.
 
+#install.packages("devtools")
+#devtools::install_github('Ash706/datadrivencv')
 # Use-case 1
 # Knit the HTML version
 rmarkdown::render("cv.rmd",
@@ -23,9 +25,9 @@ pagedown::chrome_print(input = tmp_html_cv_loc,
 
 # Use-case 2
 # Knit the HTML version
-# rmarkdown::render("cv.rmd",
-#                   params = list(pdf_mode = TRUE),
-#                   output_file = "cv.html")
+rmarkdown::render("cv.rmd",
+                   params = list(pdf_mode = TRUE),
+                   output_file = "cv.html")
 # 
 # # Convert to PDF using Pagedown
 # pagedown::chrome_print(input = "cv.html",
@@ -34,4 +36,4 @@ pagedown::chrome_print(input = tmp_html_cv_loc,
 # Set path
 getwd()
 
-setwd("C:/Users/Laser/sciebo/3- Antr?ge/Bewerbungen Postdoc/CV")
+setwd("C:/Users/Laser/Sciebo/2- Anträge/Bewerbungen Postdoc/CV")

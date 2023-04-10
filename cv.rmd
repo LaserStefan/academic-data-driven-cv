@@ -29,10 +29,10 @@ knitr::opts_chunk$set(
 
 library(magrittr) # For the pipe
 source("cv_printing_functions.r")
-
+# https://docs.google.com/spreadsheets/d/1PAcxb7nRv3x4DDOFGpRXpM-gzXqtzmV2ZNOAkYB6kQY/edit?usp=sharing
 # Read in all data and initialize a CV printer object
 CV <- create_CV_object(
-  data_location = "https://docs.google.com/spreadsheets/d/1PAcxb7nRv3x4DDOFGpRXpM-gzXqtzmV2ZNOAkYB6kQY/edit?usp=sharing",  
+  data_location = "https://docs.google.com/spreadsheets/d/1PAcxb7nRv3x4DDOFGpRXpM-gzXqtzmV2ZNOAkYB6kQY/edit?usp=sharing",  #
   pdf_mode = params$pdf_mode
 )
 
@@ -55,21 +55,21 @@ if(params$pdf_mode) {
 
 Aside
 ================================================================================
-<!--
-```{r}
+#<!--
+#```{r}
 # Build interactive network of positions colored by section
 # and connected if they occurred in the same year
-datadrivencv::build_network_logo(CV$entries_data)
-```
-
-```{r}
-if(params$pdf_mode){
-  cat("View this CV online with links at https://hightech-am-ende.de/cv.html")
-} else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://hightech-am-ende.de/cv.pdf)")
-}
-```
--->
+# datadrivencv::build_network_logo(CV$entries_data)
+#```
+#
+#```{r}
+#if(params$pdf_mode){
+#  cat("View this CV online with links at https://hightech-am-ende.de/cv.html")
+#} else {
+#  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://hightech-am-ende.de/cv.pdf)")
+#}
+#```
+#-->
 
 Contact {#contact}
 --------------------------------------------------------------------------------
@@ -96,7 +96,6 @@ Curriculum Vitae<br>Dr Stefan Laser {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-# Note the special double pipe so we modify the CV object in place
 CV %<>% print_text_block("intro") 
 ```
 
@@ -105,11 +104,8 @@ Education {data-icon=graduation-cap data-concise=true}
 ::: aside
 #### Programming and Software Skills
 I have developed expertise in digital methods. Approaches like Controversy Mapping require data analysis techniques and programming skills. My skills and interests:
-<!--
-```{r}
-CV %>% print_skill_bars()
-```
--->
+
+
 
 <i class="fa-brands fa-python fa-fw"></i> `Python: Data Science`
 
@@ -119,13 +115,13 @@ CV %>% print_skill_bars()
 
 <i class="fa-solid fa-highlighter fa-fw"></i> `MaxQDA: Coding`
 
-<i class="fab fa-markdown fa-fw"></i> `Markdown: Memos`
+<i class="fab fa-markdown fa-fw"></i> `Markdown: Qualitative`
 
 
 :::
 
 ```{r}
-CV %<>% print_section('education')
+CV %<>% print_section("education")
 ```
 
 Academic Work Experience {data-icon=address-card}
@@ -241,9 +237,9 @@ Selected Talks (All translated) {data-icon=microphone}
 CV %<>% print_section('academic_talks')
 ```
 
-<!--
-```{r}
-CV %<>% print_links()
-```
--->
+# <!--
+# ```{r}
+# CV %<>% print_links()
+# ```
+# -->
 
