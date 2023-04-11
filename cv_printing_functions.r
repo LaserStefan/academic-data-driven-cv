@@ -97,7 +97,7 @@ create_CV_object <-  function(data_location,
     ) %>%
     dplyr::arrange(desc(parse_dates(end))) %>%
     dplyr::mutate_all(~ ifelse(is.na(.), 'N/A', .)) #%>%
-    #dplyr::mutate_all(~ na_if(.,"NULL")) 
+    dplyr::mutate_all(~ na_if(.,"NULL")) # perhaps to comment out
 
   cv
 }
