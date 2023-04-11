@@ -141,7 +141,7 @@ Funding and Grants {data-icon=address-card}
 --------------------------------------------------------------------------------
 ::: aside
 #### Language Skills
-Starting with the 2019 appointment in Bochum, I have been employed in international contexts with English as the primary language.<br>
+I have been employed in international contexts with English as the primary language.<br>
 
 ```{r}
 CV %>% print_lang_bars()
