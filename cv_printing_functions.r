@@ -166,9 +166,9 @@ print_text_block <- function(cv, label){
 
   #strip_res <- sanitize_links(cv, text_block)
 
-  cat(strip_res$text)
+  #cat(strip_res$text)
 
-  invisible(strip_res$cv)
+  #invisible(strip_res$cv)
 }
 
 
