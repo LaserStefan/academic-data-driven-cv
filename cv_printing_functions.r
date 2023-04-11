@@ -104,7 +104,7 @@ create_CV_object <-  function(data_location,
 
 
 # Remove links from a text block and add to internal list
-# sanitize_links <- function(cv, text){
+ sanitize_links <- function(cv, text){
 #   if(cv$pdf_mode){
 #     link_titles <- stringr::str_extract_all(text, '(?<=\\[).+?(?=\\])')[[1]]
 #     link_destinations <- stringr::str_extract_all(text, '(?<=\\().+?(?=\\))')[[1]]
@@ -130,7 +130,7 @@ create_CV_object <-  function(data_location,
 #   }
 # 
 #   list(cv = cv, text = text)
-#}
+}
 
 
 #' @description Take a position data frame and the section id desired and prints the section to markdown.
@@ -147,13 +147,21 @@ print_section <- function(cv, section_id, glue_template = "default"){
 \n\n\n"
   }
   
-  #section_data <- dplyr::filter(cv$entries_data, section == section_id)
-  
+  section_data <- dplyr::filter(cv$entries_data, section == section_id)
+
   # Take entire entries data frame and removes the links in descending order
   # so links for the same position are right next to each other in number.
+  for(i in 1:nrow(section_data)){
+    for(col in c('title', 'description_bullets')){
+      strip_res <- sanitize_links(cv, section_data[i, col])
+      section_data[i, col] <- strip_res$text
+      cv <- strip_res$cv
+    }
+  }
 
-  
-  print(glue::glue_data(cv$entries_data, glue_template))
+  print(glue::glue_data(section_data, glue_template))
+
+  invisible(strip_res$cv)
 
 }
 
