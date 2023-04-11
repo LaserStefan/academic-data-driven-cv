@@ -151,17 +151,17 @@ print_section <- function(cv, section_id, glue_template = "default"){
 
   # Take entire entries data frame and removes the links in descending order
   # so links for the same position are right next to each other in number.
-  for(i in 1:nrow(section_data)){
-    for(col in c('title', 'description_bullets')){
-      strip_res <- sanitize_links(cv, section_data[i, col])
-      section_data[i, col] <- strip_res$text
-      cv <- strip_res$cv
-    }
-  }
+  #for(i in 1:nrow(section_data)){
+  #  for(col in c('title', 'description_bullets')){
+  #    strip_res <- sanitize_links(cv, section_data[i, col])
+  #    section_data[i, col] <- strip_res$text
+  #    cv <- strip_res$cv
+  #  }
+  #}
 
   print(glue::glue_data(section_data, glue_template))
 
-  invisible(strip_res$cv)
+  #invisible(strip_res$cv)
 
 }
 
