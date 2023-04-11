@@ -115,7 +115,7 @@ I have developed expertise in digital methods. Approaches like Controversy Mappi
 
 <i class="fa-solid fa-highlighter fa-fw"></i> `MaxQDA: Coding`
 
-<i class="fab fa-markdown fa-fw"></i> `Markdown: Qualitative`
+<i class="fab fa-markdown fa-fw"></i> `Markdown: Memos`
 
 
 :::
