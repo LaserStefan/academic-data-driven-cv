@@ -104,7 +104,7 @@ create_CV_object <-  function(data_location,
 
 
 # Remove links from a text block and add to internal list
-sanitize_links <- function(cv, text){
+# sanitize_links <- function(cv, text){
 #   if(cv$pdf_mode){
 #     link_titles <- stringr::str_extract_all(text, '(?<=\\[).+?(?=\\])')[[1]]
 #     link_destinations <- stringr::str_extract_all(text, '(?<=\\().+?(?=\\))')[[1]]
@@ -130,7 +130,7 @@ sanitize_links <- function(cv, text){
 #   }
 # 
 #   list(cv = cv, text = text)
-}
+#}
 
 
 #' @description Take a position data frame and the section id desired and prints the section to markdown.
@@ -164,7 +164,7 @@ print_text_block <- function(cv, label){
   text_block <- dplyr::filter(cv$text_blocks, loc == label) %>%
     dplyr::pull(text)
 
-  strip_res <- sanitize_links(cv, text_block)
+  #strip_res <- sanitize_links(cv, text_block)
 
   cat(strip_res$text)
 
