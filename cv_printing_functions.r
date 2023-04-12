@@ -43,7 +43,7 @@ create_CV_object <-  function(data_location,
 	read_gsheet <- function(sheet_id){
       googlesheets4::read_sheet(data_location, sheet = sheet_id, skip = 1, col_types = "c", na="")
     }
-    cv$entries_data  <- read_gsheet(sheet_id = "entries") %>%
+    cv$entries_data  <- is.recursive(read_gsheet(sheet_id = "entries")) %>%
 		dplyr::mutate_if(is.list, purrr::map_chr, as.character)
     cv$skills        <- read_gsheet(sheet_id = "language_skills")
     cv$language      <- read_gsheet(sheet_id = "lang_skills")
