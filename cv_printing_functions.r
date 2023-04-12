@@ -151,7 +151,7 @@ print_section <- function(cv, section_id, glue_template = "default"){
 \n\n\n"
   }
   
-  section_data <- dplyr::filter(cv$entries_data, section == section_id)
+  section_data <- dplyr::filter(is.recursive(cv$entries_data), section == section_id)
 
   # Take entire entries data frame and removes the links in descending order
   # so links for the same position are right next to each other in number.
