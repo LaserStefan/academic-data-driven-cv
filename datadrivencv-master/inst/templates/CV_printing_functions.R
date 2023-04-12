@@ -40,10 +40,10 @@ create_CV_object <-  function(data_location,
     read_gsheet <- function(sheet_id){
       googlesheets4::read_sheet(data_location, sheet = sheet_id, skip = 1, col_types = "c")
     }
-    cv$entries_data  <- read_gsheet(sheet_id = "entries")
-    cv$skills        <- read_gsheet(sheet_id = "language_skills")
-    cv$text_blocks   <- read_gsheet(sheet_id = "text_blocks")
-    cv$contact_info  <- read_gsheet(sheet_id = "contact_info")
+    cv_entries_data  <- read_gsheet(sheet_id = "entries")
+    cv_skills        <- read_gsheet(sheet_id = "language_skills")
+    cv_text_blocks   <- read_gsheet(sheet_id = "text_blocks")
+    cv_contact_info  <- read_gsheet(sheet_id = "contact_info")
   } else {
     # Want to go old-school with csvs?
     cv$entries_data <- readr::read_csv(paste0(data_location, "entries.csv"), skip = 1)
@@ -70,7 +70,7 @@ create_CV_object <-  function(data_location,
   }
 
   # Clean up entries dataframe to format we need it for printing
-  cv$entries_data %<>%
+  cv_entries_data %<>%
     tidyr::unite(
       tidyr::starts_with('description'),
       col = "description_bullets",
@@ -149,7 +149,7 @@ print_section <- function(cv, section_id, glue_template = "default"){
 \n\n\n"
   }
 
-  section_data <- dplyr::filter(cv$entries_data, section == section_id)
+  section_data <- dplyr::filter(cv_entries_data, section == section_id)
 
   # Take entire entries data frame and removes the links in descending order
   # so links for the same position are right next to each other in number.
@@ -171,7 +171,7 @@ print_section <- function(cv, section_id, glue_template = "default"){
 #' @description Prints out text block identified by a given label.
 #' @param label ID of the text block to print as encoded in `label` column of `text_blocks` table.
 print_text_block <- function(cv, label){
-  text_block <- dplyr::filter(cv$text_blocks, loc == label) %>%
+  text_block <- dplyr::filter(cv_text_blocks, loc == label) %>%
     dplyr::pull(text)
 
   strip_res <- sanitize_links(cv, text_block)
@@ -196,7 +196,7 @@ print_skill_bars <- function(cv, out_of = 5, bar_color = "#969696", bar_backgrou
                                       {bar_background} {width_percent}% 100%)\"
 >{skill}</div>"
   }
-  cv$skills %>%
+  cv_skills %>%
     dplyr::mutate(width_percent = round(100*as.numeric(level)/out_of)) %>%
     glue::glue_data(glue_template) %>%
     print()
@@ -232,7 +232,7 @@ Links {data-icon=link}
 #' @description Contact information section with icons
 print_contact_info <- function(cv){
   glue::glue_data(
-    cv$contact_info,
+    cv_contact_info,
     "- <i class='fa fa-{icon}'></i> {contact}"
   ) %>% print()
 
