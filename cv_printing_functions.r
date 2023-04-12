@@ -40,12 +40,15 @@ create_CV_object <-  function(data_location,
     #cv$entries_data <- googlesheets4::read_sheet(data_location, sheet = "entries", skip = 1) %>%
       # Google sheets loves to turn columns into list ones if there are different types
     #  dplyr::mutate_if(is.list, purrr::map_chr, as.character)
-	
-    cv$entries_data  <- read_sheet(sheet_id = "entries", skip = 1)
-    cv$skills        <- read_sheet(sheet_id = "language_skills", skip = 1)
-    cv$language      <- read_sheet(sheet_id = "lang_skills", skip = 1)
-    cv$text_blocks   <- read_sheet(sheet_id = "text_blocks", skip = 1)
-    cv$contact_info  <- read_sheet(sheet_id = "contact_info", skip = 1)
+	read_gsheet <- function(sheet_id){
+      googlesheets4::read_sheet(data_location, sheet = sheet_id, skip = 1, col_types = "c", na="")
+    }
+    cv$entries_data  <- read_gsheet(sheet_id = "entries") %>%
+		dplyr::mutate_if(is.list, purrr::map_chr, as.character)
+    cv$skills        <- read_gsheet(sheet_id = "language_skills")
+    cv$language      <- read_gsheet(sheet_id = "lang_skills")
+    cv$text_blocks   <- read_gsheet(sheet_id = "text_blocks")
+    cv$contact_info  <- read_gsheet(sheet_id = "contact_info")
   } else {
     # Want to go old-school with csvs?
     cv$entries_data <- readr::read_csv(paste0(data_location, "entries.csv"), skip = 1)
