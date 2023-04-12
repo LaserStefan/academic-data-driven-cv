@@ -15,7 +15,7 @@
 #'   is the sheet publicly available? (Makes authorization easier.)
 #' @return A new `CV_Printer` object.
 create_CV_object <-  function(data_location,
-                              pdf_mode = FALSE,
+                              pdf_mode = TRUE,
                               sheet_is_publicly_readable = TRUE) {
 
   cv <- list(
@@ -43,8 +43,7 @@ create_CV_object <-  function(data_location,
 	read_gsheet <- function(sheet_id){
       googlesheets4::read_sheet(data_location, sheet = sheet_id, skip = 1, col_types = "c", na="")
     }
-    cv$entries_data  <- is.recursive(read_gsheet(sheet_id = "entries")) %>%
-		dplyr::mutate_if(is.list, purrr::map_chr, as.character)
+    cv$entries_data  <- is.recursive(read_gsheet(sheet_id = "entries")) 
     cv$skills        <- read_gsheet(sheet_id = "language_skills")
     cv$language      <- read_gsheet(sheet_id = "lang_skills")
     cv$text_blocks   <- read_gsheet(sheet_id = "text_blocks")
@@ -151,21 +150,21 @@ print_section <- function(cv, section_id, glue_template = "default"){
 \n\n\n"
   }
   
-  section_data <- dplyr::filter(is.recursive(cv$entries_data), section == section_id)
+  section_data <- dplyr::filter(cv$entries_data, section == section_id)
 
   # Take entire entries data frame and removes the links in descending order
   # so links for the same position are right next to each other in number.
-  #for(i in 1:nrow(section_data)){
-  #  for(col in c('title', 'description_bullets')){
-  #    strip_res <- sanitize_links(cv, section_data[i, col])
-  #    section_data[i, col] <- strip_res$text
-  #    cv <- strip_res$cv
-  #  }
-  #}
+  for(i in 1:nrow(section_data)){
+    for(col in c('title', 'description_bullets')){
+      strip_res <- sanitize_links(cv, section_data[i, col])
+      section_data[i, col] <- strip_res$text
+      cv <- strip_res$cv
+    }
+  }
 
   print(glue::glue_data(section_data, glue_template))
 
-  #invisible(strip_res$cv)
+  invisible(strip_res$cv)
 
 }
 

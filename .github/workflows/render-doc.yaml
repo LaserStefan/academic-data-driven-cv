@@ -32,7 +32,9 @@ jobs:
           devtools::install_github("nstrayer/datadrivencv")
         shell: Rscript {0}
       - name: Render my document to PDF
-        run: Rscript -e 'rmarkdown::render("cv.Rmd", output_format = "pdf_document")'
+        run: Rscript -e 'rmarkdown::render("cv.rmd",
+                  params = list(pdf_mode = TRUE),
+                  output_file = "cv.pdf")'
       - name: Commit results
         run: |
           git add cv*
